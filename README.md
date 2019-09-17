@@ -1,25 +1,19 @@
-- User Model
+| User Model |
+| ---- | ---- |
+| name | string |
 
-    - name :string
+| Task Model |
+| ---- | ---- |
+| user_id | references |
+|  name  | string |
+| content | string |
+| priority | string |
+| status | string |
+| limit | timestamp |
 
-- Task Model
-
-    - user_id :references
-
-    - name :string
-
-    - content :string
-
-    - priority :string
-
-    - status :string
-
-    - limit :timestamp
-
-- Label Model
-
-    - task_id :references
-
-    - name :string
+| Label Model |
+| ---- | ---- |
+| task_id | references |
+| name  | string |
 
 
