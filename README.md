@@ -1,22 +1,26 @@
-| User Model |    
-| :---: | 
-| id|  
-| name:string |
+*User*
 
-| Task Model | 
-| :---: | 
-| id |  
-| user_id:references |
-|  name:string |
-| content:string |
-| priority:string |
-| status:string |
-| limit:timestamp |
+カラム  | 型
+--- | ---
+name | string
 
-| Label Model | 
-| :---: |
-| id |  
-| task_id:references |
-| name:string |
+*Task*
+
+カラム  | 型
+--- | ---
+user_id | references
+name | string
+content | string
+priority | string
+status | string
+limit | timestamp
+
+*Label*
+
+カラム  | 型
+--- | ---
+task_id | references
+name | string
+
 
 
